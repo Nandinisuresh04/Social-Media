@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: socialMedia
+  datasource:
+    url: jdbc:postgresql://localhost:5432/socialmediadb?options=-c%20TimeZone%3DUTC
+    username: admin
+    password: admin123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
