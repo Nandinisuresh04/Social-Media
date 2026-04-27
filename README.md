@@ -103,17 +103,6 @@ All enforced using Redis atomic operations to prevent race conditions.
 
 ---
 
-### Notification Engine
-- 15-minute notification cooldown per user  
-- Stores pending notifications in Redis  
-- Scheduled job aggregates and sends summarized updates
-
-- 
----
-
-- ## ✅ Conclusion
-
-This project demonstrates the design of a scalable and reliable backend system capable of handling high concurrency using Redis-based guardrails. By combining Spring Boot for API development, PostgreSQL for persistent storage, and Redis for real-time processing, the system ensures data integrity, controlled bot interactions, and efficient notification management.
-
-The implementation highlights strong backend fundamentals such as stateless architecture, atomic operations for concurrency control, and event-driven scheduling, making it suitable for real-world, high-traffic applications.
+AUTHOR
+NANDINI S B
 
