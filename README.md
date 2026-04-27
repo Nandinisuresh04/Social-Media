@@ -29,7 +29,6 @@ Redis acts as a guardrail layer, ensuring all constraints are validated before d
 ### ⚡ Virality Engine
 =======
 ### Virality Engine
->>>>>>> eecdf59ac916335a1c021eb86e65ab77a3ae0870
 Real-time scoring using Redis:
 
 - Bot reply → +1  
@@ -42,7 +41,6 @@ Real-time scoring using Redis:
 ### 🔐 Atomic Guardrails
 =======
 ### Atomic Guardrails
->>>>>>> eecdf59ac916335a1c021eb86e65ab77a3ae0870
 - Max 100 bot replies per post  
 - Max comment depth of 20  
 - Bot-to-user interaction cooldown (10 minutes)  
@@ -73,11 +71,15 @@ All constraints are enforced using Redis atomic operations to prevent race condi
 docker-compose up -d
 Run Application
 mvn spring-boot:run
+
+
 📡 API Endpoints
 Method	Endpoint	Description
 POST	/api/posts	Create a post
 POST	/api/posts/{postId}/comments	Add a comment
 POST	/api/posts/{postId}/like	Like a post
+
+
 🧪 Testing
 Concurrency Handling
 Supports high concurrent requests
@@ -85,22 +87,17 @@ Ensures strict enforcement of limits using Redis
 Stateless Design
 No in-memory storage
 All runtime state managed in Redis
-📦 Deliverables
-Spring Boot source code
-Docker setup for PostgreSQL & Redis
-Postman collection
-README documentation
+
+
 💡 Key Highlights
 Redis used for atomic operations and concurrency control
 Clean separation between persistence and real-time logic
 Designed for scalability and fault tolerance
+
+
 ✅ Conclusion
 
 This project demonstrates the design of a scalable and reliable backend system capable of handling high concurrency using Redis-based guardrails. By combining Spring Boot, PostgreSQL, and Redis, the system ensures data integrity, controlled interactions, and efficient notification management.
-
-👨‍💻 Author
-
-Nandini S B
 =======
 All enforced using Redis atomic operations to prevent race conditions.
 
@@ -119,4 +116,4 @@ All enforced using Redis atomic operations to prevent race conditions.
 This project demonstrates the design of a scalable and reliable backend system capable of handling high concurrency using Redis-based guardrails. By combining Spring Boot for API development, PostgreSQL for persistent storage, and Redis for real-time processing, the system ensures data integrity, controlled bot interactions, and efficient notification management.
 
 The implementation highlights strong backend fundamentals such as stateless architecture, atomic operations for concurrency control, and event-driven scheduling, making it suitable for real-world, high-traffic applications.
->>>>>>> eecdf59ac916335a1c021eb86e65ab77a3ae0870
+
