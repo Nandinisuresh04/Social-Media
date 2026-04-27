@@ -25,7 +25,11 @@ Redis acts as a guardrail layer, ensuring all constraints are validated before d
 
 ---
 
+<<<<<<< HEAD
 ### ⚡ Virality Engine
+=======
+### Virality Engine
+>>>>>>> eecdf59ac916335a1c021eb86e65ab77a3ae0870
 Real-time scoring using Redis:
 
 - Bot reply → +1  
@@ -34,11 +38,16 @@ Real-time scoring using Redis:
 
 ---
 
+<<<<<<< HEAD
 ### 🔐 Atomic Guardrails
+=======
+### Atomic Guardrails
+>>>>>>> eecdf59ac916335a1c021eb86e65ab77a3ae0870
 - Max 100 bot replies per post  
 - Max comment depth of 20  
 - Bot-to-user interaction cooldown (10 minutes)  
 
+<<<<<<< HEAD
 All constraints are enforced using Redis atomic operations to prevent race conditions.
 
 ---
@@ -92,3 +101,22 @@ This project demonstrates the design of a scalable and reliable backend system c
 👨‍💻 Author
 
 Nandini S B
+=======
+All enforced using Redis atomic operations to prevent race conditions.
+
+---
+
+### Notification Engine
+- 15-minute notification cooldown per user  
+- Stores pending notifications in Redis  
+- Scheduled job aggregates and sends summarized updates
+
+- 
+---
+
+- ## ✅ Conclusion
+
+This project demonstrates the design of a scalable and reliable backend system capable of handling high concurrency using Redis-based guardrails. By combining Spring Boot for API development, PostgreSQL for persistent storage, and Redis for real-time processing, the system ensures data integrity, controlled bot interactions, and efficient notification management.
+
+The implementation highlights strong backend fundamentals such as stateless architecture, atomic operations for concurrency control, and event-driven scheduling, making it suitable for real-world, high-traffic applications.
+>>>>>>> eecdf59ac916335a1c021eb86e65ab77a3ae0870
